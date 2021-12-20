@@ -1,6 +1,4 @@
-package javaCourse;
-
-import java.security.PublicKey;
+package java_course;
 
 public class Person {
 

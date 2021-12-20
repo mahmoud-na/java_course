@@ -1,4 +1,4 @@
-package javaCourse;
+package java_course;
 
 public class Wall {
     private double height;

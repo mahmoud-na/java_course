@@ -1,4 +1,4 @@
-package javaCourse;
+package java_course;
 
 import java.util.Scanner;
 
@@ -33,12 +33,25 @@ public class javaCourse {
 //        inputThenPrintSumAndAverage();
 //        System.out.println(getBucketCount(3.4,2.1,1.5,2));
 
+//
+//        BankAccount account = new BankAccount("123456789",0.00,"Amr Nagy","amr@gmail.com","4031");
+//        account.depositFunds(5000);
+//        System.out.println("Your Balance is: " + account.getBalance()+ " $");
+//        account.withdrawFunds(10000);
+//        System.out.println("Your Balance is: " + account.getBalance()+ " $");
+//
+//        BMW bmw = new BMW(36);
+//        bmw.accelerate(30);
 
-        BankAccount account = new BankAccount("123456789",0.00,"Amr Nagy","amr@gmail.com","4031");
-        account.depositFunds(5000);
-        System.out.println("Your Balance is: " + account.getBalance()+ " $");
-        account.withdrawFunds(10000);
-        System.out.println("Your Balance is: " + account.getBalance()+ " $");
+//        Circle circle = new Circle(3.75);
+//        System.out.println("radius "+ circle.getRadius());
+//        System.out.println("area "+ circle.getArea());
+//
+//        Cylinder cylinder =new Cylinder(5.55,7.25);
+//        System.out.println("from cylinder radius "+ cylinder.getRadius());
+//        System.out.println("from cylinder height "+ cylinder.getHeight());
+//        System.out.println("from cylinder area "+ cylinder.getArea());
+//        System.out.println("from cylinder volume "+ cylinder.getVolume());
 
     }
 
