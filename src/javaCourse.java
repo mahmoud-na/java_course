@@ -1,15 +1,19 @@
-import sec_7_oop_master_challenge.DeluxeBurger;
-import sec_7_oop_master_challenge.Hamburger;
-import sec_7_oop_master_challenge.HealthyBurger;
+import sec_8_arays_java_inbuilt_lists_autoboxing_unboxing.Array;
 
+import javax.sound.midi.Soundbank;
+import java.util.Arrays;
 import java.util.Scanner;
 
 
 public class javaCourse {
 
+    private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-//        Scanner scanner = new Scanner(System.in);
+        boolean isRepeated = true;
+
+        while (isRepeated) {
+            //        Scanner scanner = new Scanner(System.in);
 //
 //        System.out.println("Enter your year of birth: ");
 //        boolean hasNextInt = scanner.hasNextInt();
@@ -34,7 +38,6 @@ public class javaCourse {
 //        scanner.close();
 //        inputThenPrintSumAndAverage();
 //        System.out.println(getBucketCount(3.4,2.1,1.5,2));
-
 //
 //        BankAccount account = new BankAccount("123456789",0.00,"Amr Nagy","amr@gmail.com","4031");
 //        account.depositFunds(5000);
@@ -44,11 +47,9 @@ public class javaCourse {
 //
 //        BMW bmw = new BMW(36);
 //        bmw.accelerate(30);
-
 //        Circle circle = new Circle(3.75);
 //        System.out.println("radius "+ circle.getRadius());
 //        System.out.println("area "+ circle.getArea());
-//
 //        Cylinder cylinder =new Cylinder(5.55,7.25);
 //        System.out.println("from cylinder radius "+ cylinder.getRadius());
 //        System.out.println("from cylinder height "+ cylinder.getHeight());
@@ -56,24 +57,50 @@ public class javaCourse {
 //        System.out.println("from cylinder volume "+ cylinder.getVolume());
 
 
-        Hamburger hamburger = new Hamburger("Basic", "Sausage", 3.56, "White");
-        double price = hamburger.itemizeHamburger();
-        hamburger.addHamburgerAddition1("Tomato", 0.27);
-        hamburger.addHamburgerAddition2("Lettuce", 0.75);
-        hamburger.addHamburgerAddition3("Cheese", 1.13);
-        System.out.println("Total Burger price is " + hamburger.itemizeHamburger());
+//        Hamburger hamburger = new Hamburger("Basic", "Sausage", 3.56, "White");
+//        double price = hamburger.itemizeHamburger();
+//        hamburger.addHamburgerAddition1("Tomato", 0.27);
+//        hamburger.addHamburgerAddition2("Lettuce", 0.75);
+//        hamburger.addHamburgerAddition3("Cheese", 1.13);
+//        System.out.println("Total Burger price is " + hamburger.itemizeHamburger());
+//
+//        HealthyBurger healthyBurger = new HealthyBurger("Bacon", 5.67);
+//        healthyBurger.addHamburgerAddition1("Egg", 5.43);
+//        healthyBurger.addHealthyAddition1("Lentils", 3.41);
+//        System.out.println("Total Healthy Burger price is  " + healthyBurger.itemizeHamburger());
+//
+//        DeluxeBurger db = new DeluxeBurger();
+//        db.addHamburgerAddition3("Should not do this", 50.53);
+//        db.itemizeHamburger();
 
-        HealthyBurger healthyBurger = new HealthyBurger("Bacon", 5.67);
-        healthyBurger.addHamburgerAddition1("Egg", 5.43);
-        healthyBurger.addHealthyAddition1("Lentils", 3.41);
-        System.out.println("Total Healthy Burger price is  " + healthyBurger.itemizeHamburger());
+//         Array arrays = new Array();
+//
+//        int arrSize;
+//        System.out.println("Please Enter Array Size: ");
+//        arrSize = scanner.nextInt();
+//        int[] array = arrays.getIntegers(arrSize);
+//        System.out.println("Unsorted Array =================>>> ");
+//        arrays.printArray(array);
+//        System.out.println("Sorted Array ==================>>> ");
+//        array = arrays.sortIntegers(array);
+//        arrays.printArray(array);
 
-        DeluxeBurger db = new DeluxeBurger();
-        db.addHamburgerAddition3("Should not do this", 50.53);
-        db.itemizeHamburger();
 
+//        Array arrays = new Array();
+//        int[] array = arrays.readElements((arrays.readInteger()));
+//        System.out.println("Min number equals: " + arrays.findMin(array));
+            Array arrays = new Array();
+            int[] array = arrays.readElements((arrays.readInteger()));
+            System.out.println("Original Array: " + Arrays.toString(array) + "\n");
+            arrays.reverse(array);
+            System.out.println("Reversed Array: " + Arrays.toString(array));
+
+            System.out.println("\n Please Enter number 1 if you need to repeat your code:");
+            if ((scanner.nextInt()) != 1) {
+                isRepeated = false;
+            }
+        }
     }
-
 
     public static int getBucketCount(double width, double height, double areaPerBucket, int extraBuckets) {
         if (width > 0 && height > 0 && areaPerBucket > 0 && extraBuckets >= 0) {
