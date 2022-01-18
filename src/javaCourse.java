@@ -1,7 +1,5 @@
 import sec_8_arays_java_inbuilt_lists_autoboxing_unboxing.Array;
 
-import javax.sound.midi.Soundbank;
-import java.util.Arrays;
 import java.util.Scanner;
 
 
@@ -11,6 +9,9 @@ public class javaCourse {
 
     public static void main(String[] args) {
         boolean isRepeated = true;
+
+        Array arr = new Array();
+
 
         while (isRepeated) {
             //        Scanner scanner = new Scanner(System.in);
@@ -89,11 +90,80 @@ public class javaCourse {
 //        Array arrays = new Array();
 //        int[] array = arrays.readElements((arrays.readInteger()));
 //        System.out.println("Min number equals: " + arrays.findMin(array));
-            Array arrays = new Array();
-            int[] array = arrays.readElements((arrays.readInteger()));
-            System.out.println("Original Array: " + Arrays.toString(array) + "\n");
-            arrays.reverse(array);
-            System.out.println("Reversed Array: " + Arrays.toString(array));
+//            Array arrays = new Array();
+//            int[] array = arrays.readElements((arrays.readInteger()));
+//            System.out.println("Original Array: " + Arrays.toString(array) + "\n");
+//            arrays.reverse(array);
+//            System.out.println("Reversed Array: " + Arrays.toString(array));
+
+//            while (!quite) {
+//                int choice;
+//                System.out.println("Enter your Choice: ");
+//                choice = scanner.nextInt();
+//                scanner.nextLine();
+//
+//                switch (choice) {
+//                    case 0:
+//                        arr.printInstructions();
+//                        break;
+//                    case 1:
+//                        arr.groceryList.printGroceryList();
+//                        break;
+//                    case 2:
+//                        arr.addItem();
+//                        break;
+//                    case 3:
+//                        arr.modifyItem();
+//                        break;
+//                    case 4:
+//                        arr.removeItem();
+//                        break;
+//                    case 5:
+//                        arr.searchForItem();
+//                        break;
+//                    case 6:
+//                        arr.processArrayList();
+//                        break;
+//                    case 7:
+//                        quite = true;
+//                        break;
+//                }
+//            }
+            arr.printActions();
+            boolean quite = false;
+            arr.startPhone();
+            while (!quite) {
+
+                System.out.println("\nEnter action: (6 to show available actions)");
+                int choice = scanner.nextInt();
+                scanner.nextLine();
+
+                switch (choice) {
+                    case 0:
+                        System.out.println("\nShutting down....");
+                        quite = true;
+                        break;
+                    case 1:
+                        arr.mobilePhone.printContacts();
+                        break;
+                    case 2:
+                        arr.addNewContact();
+                        break;
+                    case 3:
+                        arr.updateContact();
+                        break;
+                    case 4:
+                        arr.removeContact();
+                        break;
+                    case 5:
+                        arr.queryContact();
+                        break;
+                    case 6:
+                        arr.printActions();
+                        break;
+                }
+            }
+
 
             System.out.println("\n Please Enter number 1 if you need to repeat your code:");
             if ((scanner.nextInt()) != 1) {
