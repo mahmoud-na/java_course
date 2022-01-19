@@ -1,4 +1,4 @@
-package sec_8_arays_java_inbuilt_lists_autoboxing_unboxing.arraylist_challenge;
+package sec_8_arays_java_inbuilt_lists_autoboxing_unboxing.arraylist_challenge_mobile_phone;
 
 import java.util.ArrayList;
 

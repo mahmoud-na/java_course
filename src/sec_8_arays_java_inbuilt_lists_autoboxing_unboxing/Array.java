@@ -1,7 +1,10 @@
 package sec_8_arays_java_inbuilt_lists_autoboxing_unboxing;
 
-import sec_8_arays_java_inbuilt_lists_autoboxing_unboxing.arraylist_challenge.Contact;
-import sec_8_arays_java_inbuilt_lists_autoboxing_unboxing.arraylist_challenge.MobilePhone;
+import sec_8_arays_java_inbuilt_lists_autoboxing_unboxing.arraylist_challenge_mobile_phone.Contact;
+import sec_8_arays_java_inbuilt_lists_autoboxing_unboxing.arraylist_challenge_mobile_phone.MobilePhone;
+import sec_8_arays_java_inbuilt_lists_autoboxing_unboxing.banking_app_challenge_113_114_115.Bank;
+import sec_8_arays_java_inbuilt_lists_autoboxing_unboxing.banking_app_challenge_113_114_115.Branch;
+import sec_8_arays_java_inbuilt_lists_autoboxing_unboxing.banking_app_challenge_113_114_115.Customer;
 import sec_8_arays_java_inbuilt_lists_autoboxing_unboxing.list_and_array_list.GroceryList;
 
 import java.util.ArrayList;
@@ -11,11 +14,51 @@ public class Array {
     private static Scanner scanner = new Scanner(System.in);
     public static GroceryList groceryList = new GroceryList();
     public static MobilePhone mobilePhone = new MobilePhone("01151742505");
+    public static Bank bank = new Bank("NBE");
 
 
-    /////////////////////////////////// ArrayList Challenge //////////////////////////////////////
+    public static void printBankInstructions() {
+        System.out.println("\nAvailable actions:\npress");
+        System.out.println("0 - to quit\n" +
+                "1 - to print branches list.\n" +
+                "2 - to add a new branch\n" +
+                "3 - to add a new customer to a branch\n" +
+                "4 - to add transaction to a customer\n" +
+                "5 - to show list of customers\n" +
+                "6 - to print a list of available actions."
+        );
+        System.out.println("Choose your action: ");
+    }
 
+    public static void addNewBranch() {
+        System.out.println("Enter new branch name:");
+        String branchName = scanner.nextLine();
+        if (bank.addBranch(branchName)) {
+            System.out.println("New branch added: name = " + branchName);
+        } else {
+            System.out.println("Cannot add, " + branchName + " already on file");
+        }
+    }
 
+    public static void addNewCustomer() {
+        System.out.println("Enter branch name to add customer to it: ");
+        String branchName = scanner.nextLine();
+//        Branch branch = bank.queryBranch(branchName);
+//        if(branch == null){
+//            System.out.println("Branch not found");
+//            return;
+//        }
+        System.out.println("Enter new customer name:");
+        String customerName = scanner.nextLine();
+//        Customer customer = new Customer(customerName, 1000.0);
+        bank.addCustomer(branchName,customerName,1000.0);
+    }
+
+    public static void addTransactionToCustomer(){
+        System.out.println();
+    }
+
+    /////////////////////////////////// ArrayList Challenge Mobile phone Application //////////////////////////////////////
     public void startPhone() {
         System.out.println("Starting phone...");
     }
@@ -94,7 +137,6 @@ public class Array {
                 " phone number is " +
                 existingContactRecord.getPhoneNumber());
     }
-
 
     public static void printContact() {
         mobilePhone.printContacts();
