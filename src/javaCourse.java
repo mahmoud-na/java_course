@@ -129,40 +129,42 @@ public class javaCourse {
 //                        break;
 //                }
 //            }
-            arr.printActions();
-            boolean quite = false;
-            arr.startPhone();
-            while (!quite) {
-
-                System.out.println("\nEnter action: (6 to show available actions)");
-                int choice = scanner.nextInt();
-                scanner.nextLine();
-
-                switch (choice) {
-                    case 0:
-                        System.out.println("\nShutting down....");
-                        quite = true;
-                        break;
-                    case 1:
-                        arr.mobilePhone.printContacts();
-                        break;
-                    case 2:
-                        arr.addNewContact();
-                        break;
-                    case 3:
-                        arr.updateContact();
-                        break;
-                    case 4:
-                        arr.removeContact();
-                        break;
-                    case 5:
-                        arr.queryContact();
-                        break;
-                    case 6:
-                        arr.printActions();
-                        break;
-                }
-            }
+//            //==========================Mobile phone Application==================
+//            arr.printActions();
+//            boolean quite = false;
+//            arr.startPhone();
+//            while (!quite) {
+//
+//                System.out.println("\nEnter action: (6 to show available actions)");
+//                int choice = scanner.nextInt();
+//                scanner.nextLine();
+//
+//                switch (choice) {
+//                    case 0:
+//                        System.out.println("\nShutting down....");
+//                        quite = true;
+//                        break;
+//                    case 1:
+//                        arr.mobilePhone.printContacts();
+//                        break;
+//                    case 2:
+//                        arr.addNewContact();
+//                        break;
+//                    case 3:
+//                        arr.updateContact();
+//                        break;
+//                    case 4:
+//                        arr.removeContact();
+//                        break;
+//                    case 5:
+//                        arr.queryContact();
+//                        break;
+//                    case 6:
+//                        arr.printActions();
+//                        break;
+//                }
+//            }
+//            //==========================Mobile phone Application==================
 
 
             System.out.println("\n Please Enter number 1 if you need to repeat your code:");
