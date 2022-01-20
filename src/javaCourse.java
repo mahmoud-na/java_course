@@ -1,4 +1,7 @@
 import sec_8_arays_java_inbuilt_lists_autoboxing_unboxing.Array;
+import sec_8_arays_java_inbuilt_lists_autoboxing_unboxing.banking_app_challenge_113_114_115.Bank;
+import sec_8_arays_java_inbuilt_lists_autoboxing_unboxing.banking_app_challenge_113_114_115.Branch;
+import sec_8_arays_java_inbuilt_lists_autoboxing_unboxing.banking_app_challenge_113_114_115.Customer;
 
 import java.util.Scanner;
 
@@ -166,7 +169,14 @@ public class javaCourse {
 //            }
 //            //==========================Mobile phone Application==================
 
+            Customer customer = new Customer("Amr", 1000.0);
+            Bank bank = new Bank("ame");
 
+//            bank.addBranch("amoor");
+//            bank.findBranch("amoor");
+
+
+            System.out.println(customer.getTransactions() + "555555555555555555555555555555555");
             System.out.println("\n Please Enter number 1 if you need to repeat your code:");
             if ((scanner.nextInt()) != 1) {
                 isRepeated = false;

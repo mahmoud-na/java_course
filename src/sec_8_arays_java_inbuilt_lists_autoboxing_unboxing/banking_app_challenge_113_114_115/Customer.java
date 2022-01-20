@@ -6,9 +6,10 @@ public class Customer {
     private String name;
     private ArrayList<Double> transactions;
 
-    public Customer(String name,double transaction) {
+    public Customer(String name, double transaction) {
         this.name = name;
-        setTransactions(transaction);
+        this.transactions = new ArrayList<Double>();
+        addTransaction(transaction);
     }
 
     public String getName() {
@@ -19,7 +20,7 @@ public class Customer {
         return transactions;
     }
 
-    public void setTransactions(double transactions) {
+    public void addTransaction(double transactions) {
         this.transactions.add(transactions);
     }
 }
