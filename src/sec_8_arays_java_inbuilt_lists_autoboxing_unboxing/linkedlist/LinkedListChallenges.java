@@ -1,8 +1,5 @@
 package sec_8_arays_java_inbuilt_lists_autoboxing_unboxing.linkedlist;
 
-import sec_8_arays_java_inbuilt_lists_autoboxing_unboxing.linkedlist.playlist_challenge.Album;
-import sec_8_arays_java_inbuilt_lists_autoboxing_unboxing.linkedlist.playlist_challenge.Song;
-
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.ListIterator;
@@ -11,50 +8,21 @@ import java.util.Scanner;
 public class LinkedListChallenges {
 
     public static void main(String[] args) {
-//        LinkedList<String> placesToVisit = new LinkedList<String>();
-//        addInOrder(placesToVisit, "Cairo");
-//        addInOrder(placesToVisit, "Alex");
-//        addInOrder(placesToVisit, "Dahab");
-//        addInOrder(placesToVisit, "Sharm");
-//        addInOrder(placesToVisit, "Siwa");
-//        addInOrder(placesToVisit, "Noba");
-//        addInOrder(placesToVisit, "Matrouh");
-//        addInOrder(placesToVisit, "Mansoura");
-//        System.out.println("===================================");
-//        printList(placesToVisit);
-//        addInOrder(placesToVisit, "Mansoura");
-//        printList(placesToVisit);
-//        visit(placesToVisit);
-
-        LinkedList<Album> albumsList = new LinkedList<Album>();
-        addAlbum(albumsList,"Amr diab");
-        addAlbum(albumsList,"Amr Hassan");
-        addAlbum(albumsList,"Amr diab");
-
+        LinkedList<String> placesToVisit = new LinkedList<String>();
+        addInOrder(placesToVisit, "Cairo");
+        addInOrder(placesToVisit, "Alex");
+        addInOrder(placesToVisit, "Dahab");
+        addInOrder(placesToVisit, "Sharm");
+        addInOrder(placesToVisit, "Siwa");
+        addInOrder(placesToVisit, "Noba");
+        addInOrder(placesToVisit, "Matrouh");
+        addInOrder(placesToVisit, "Mansoura");
+        System.out.println("===================================");
+        printList(placesToVisit);
+        addInOrder(placesToVisit, "Mansoura");
+        printList(placesToVisit);
+        visit(placesToVisit);
     }
-
-
-    private static boolean addAlbum(LinkedList<Album> albums, String albumName) {
-        if (findAlbum(albums, albumName) < 0) {
-            Album album = new Album(albumName);
-            albums.add(album);
-            System.out.println("Album added successfully");
-            return true;
-        }
-        System.out.println("Album is already added");
-        return false;
-    }
-
-    private static int findAlbum(LinkedList<Album> albums, String album) {
-        ListIterator<Album> albumListIterator = albums.listIterator();
-        while (albumListIterator.hasNext()) {
-            if (albumListIterator.next().getName().equals(album)) {
-                return 1;
-            }
-        }
-        return -1;
-    }
-
     private static void printList(LinkedList<String> linkedList) {
         Iterator<String> i = linkedList.iterator();
         while (i.hasNext()) {
