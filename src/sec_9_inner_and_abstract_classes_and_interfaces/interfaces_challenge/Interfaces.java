@@ -19,6 +19,8 @@ public class Interfaces {
         System.out.println("Strength= " + ((Monster) werewolf).getStrength());
         System.out.println(werewolf);
         saveObject(werewolf);
+
+
     }
 
 

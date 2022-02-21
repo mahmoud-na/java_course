@@ -1,0 +1,15 @@
+
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ëùˆæ
+>
+java:S1068"(Remove this unused "name" private field.(Ë¥¼
+D
+java:S1068")Remove this unused "wall1" private field.(ƒÍùöøÿÿÿÿ
+?
+java:S1068")Remove this unused "wall2" private field.(‚Å÷Í
+D
+java:S1068")Remove this unused "wall3" private field.(úºëüÿÿÿÿ
+>
+java:S1068")Remove this unused "wall4" private field.(¾Ùö%
+A
+java:S1068"+Remove this unused "ceiling" private field.(™œ‚·
+V	java:S107"AConstructor has 8 parameters, which is greater than 7 authorized.(ÊÑÙý

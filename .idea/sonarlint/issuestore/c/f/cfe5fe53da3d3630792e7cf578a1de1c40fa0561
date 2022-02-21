@@ -1,0 +1,30 @@
+
+;
+java:S2440"%Remove this instantiation of "Array".(±é«î
+Q	java:S125"<This block of commented-out lines of code should be removed.(‹Éÿ¼
+P	java:S125@"<This block of commented-out lines of code should be removed.(áæõk
+V	java:S125P"<This block of commented-out lines of code should be removed.(¬ÔÓ…ûÿÿÿÿ
+V	java:S125]"<This block of commented-out lines of code should be removed.(¬ÔÓ…ûÿÿÿÿ
+V	java:S125f"<This block of commented-out lines of code should be removed.(½©…Ùúÿÿÿÿ
+T	java:S106Š"9Replace this use of System.out or System.err by a logger.(÷ýòßûÿÿÿÿ
+8	java:S131Ž""Add a default case to this switch.(¨ÕÉ
+O	java:S106¨"9Replace this use of System.out or System.err by a logger.(©†£¢
+W	java:S125²"<This block of commented-out lines of code should be removed.(ª –­ûÿÿÿÿ
+W	java:S125¼"<This block of commented-out lines of code should be removed.(ª –­ûÿÿÿÿ
+W	java:S125Æ"<This block of commented-out lines of code should be removed.(ª –­ûÿÿÿÿ
+T	java:S106Ý"9Replace this use of System.out or System.err by a logger.(™Ò†¢úÿÿÿÿ
+T	java:S106ç"9Replace this use of System.out or System.err by a logger.(¸¿òøÿÿÿÿ
+T	java:S106î"9Replace this use of System.out or System.err by a logger.(¸¿òøÿÿÿÿ
+N	java:S106ø"9Replace this use of System.out or System.err by a logger.(•·”S
+T	java:S106ù"9Replace this use of System.out or System.err by a logger.(‚æ›Ñûÿÿÿÿ
+O	java:S106€"9Replace this use of System.out or System.err by a logger.(€æž—
+O	java:S106Œ"9Replace this use of System.out or System.err by a logger.(ÆÔº
+N	java:S106’"9Replace this use of System.out or System.err by a logger.(•·”S
+O	java:S106–"9Replace this use of System.out or System.err by a logger.(¨˜¾ê
+|
+java:S1488±"eImmediately return this expression instead of assigning it to the temporary variable "bucketsNeeded".(‡ßý
+|
+java:S1488»"eImmediately return this expression instead of assigning it to the temporary variable "bucketsNeeded".(ƒ³óè
+
+java:S1488Å"eImmediately return this expression instead of assigning it to the temporary variable "bucketsNeeded".(Àþ˜üÿÿÿÿ
+b	java:S101	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(õÊ‚“

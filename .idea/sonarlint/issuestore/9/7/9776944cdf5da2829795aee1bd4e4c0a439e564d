@@ -1,0 +1,10 @@
+
+M	java:S106"9Replace this use of System.out or System.err by a logger.(æÆÕ>
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ÀÒàÆ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(‘‰¥Çüÿÿÿÿ
+S	java:S106$"9Replace this use of System.out or System.err by a logger.( ¦û¿øÿÿÿÿ
+\
+java:S1126*"AReplace this if-then-else statement by a single return statement.(˜ÁÇðþÿÿÿÿ
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(‘É‡¸úÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Í¦¶¡

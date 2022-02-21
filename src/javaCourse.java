@@ -176,7 +176,7 @@ public class javaCourse {
 //            bank.findBranch("amoor");
 
 
-            System.out.println(customer.getTransactions() + "555555555555555555555555555555555");
+            System.out.println(customer.getTransactions() + "6625651651615");
             System.out.println("\n Please Enter number 1 if you need to repeat your code:");
             if ((scanner.nextInt()) != 1) {
                 isRepeated = false;

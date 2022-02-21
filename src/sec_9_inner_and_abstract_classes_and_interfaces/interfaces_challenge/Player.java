@@ -14,6 +14,7 @@ public class Player implements ISaveable {
         this.hitPoints = hitPoints;
         this.strength = strength;
         this.weapon = "Sword";
+
     }
 
     public String getName() {
