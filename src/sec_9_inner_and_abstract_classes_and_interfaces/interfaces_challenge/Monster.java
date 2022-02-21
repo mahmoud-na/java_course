@@ -12,6 +12,7 @@ public class Monster implements ISaveable {
         this.name = name;
         this.hitPoints = hitPoints;
         this.strength = strength;
+
     }
 
 

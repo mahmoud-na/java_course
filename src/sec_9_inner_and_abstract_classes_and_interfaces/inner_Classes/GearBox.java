@@ -12,6 +12,8 @@ public class GearBox {
         this.gears = new ArrayList<>();
         Gear neutral = new Gear(0, 0.0);
         this.gears.add(neutral);
+
+
     }
     
     public class Gear {
